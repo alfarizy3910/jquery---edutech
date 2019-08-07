@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery Intro</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <script <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#tutup").click(function(){        
+                $(".kotak").hide();
+        });
+        $("#tampil").click(function(){
+            $(".kotak").show();
+        });
+    });
+
+    $(document).ready(function(){
+        $('.kotakb').mouseenter(function(){
+            $('p.ket').slideUp();
+        });
+        $('kotakb'),mouseleave (function(){
+            $('p.ket').slideDown();
+        });
+    });
+
+    </script>
+
+    <style type="text/css">
+        .kotak {
+            height: 20px;
+            width: 20px;
+            color: red;
+            background-color: aqua;
+            margin: 5px;
+        }
+
+        .kotakb{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <button id="tutup">Tutup</button>
+    <button id="tampil">Tampil</button>
+
+    <hr>
+
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+
+    <hr>
+
+    <div class="kotakb"></div>
+
+    <p class="ket">tutup deskripsi project</p>
+
+    <hr>
+
+    </body>
+</html>

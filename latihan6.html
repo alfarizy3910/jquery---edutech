@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery</title>
+    <script <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style type="text/css">
+        .animasi {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        .container {
+            background-color: grey;
+            height: 600px;
+            width: 600px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <button class="maju">
+        klik maju
+    </button>
+    <br>
+    <div class="container">
+        <div class="animasi">Tangerang</div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.maju').click(function(){
+                $('.animasi').animate({
+                    left: '500px'
+                });
+                $('.animasi').animate({
+                    left: '10px'
+                });
+            });
+        });           
+    
+    </script>
+
+</body>
+</html>
